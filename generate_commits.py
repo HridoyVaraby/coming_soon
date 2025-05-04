@@ -4,8 +4,8 @@ from datetime import datetime, timedelta
 
 def generate_commits():
     # Set date range
-    start_date = datetime(2024, 1, 1)
-    end_date = datetime(2024, 12, 31)
+    start_date = datetime(2023, 1, 1)
+    end_date = datetime(2023, 12, 31)
     delta = end_date - start_date
     
     # Create markdown file if not exists
@@ -21,7 +21,7 @@ def generate_commits():
         current_date = start_date + timedelta(days=day)
         date_str = current_date.strftime('%Y-%m-%d')
         
-        for i in range(4):  # 3 commits per day
+        for i in range(3):  # 3 commits per day
             # Random time between 9:00 and 17:00
             hour = random.randint(9, 16)
             minute = random.randint(0, 59)
