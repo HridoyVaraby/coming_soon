@@ -14,14 +14,14 @@ def generate_commits():
             f.write('# Commit History\n\n')
     
     # Select 15 random days
-    selected_days = random.sample(range(delta.days + 1), 43)
+    selected_days = random.sample(range(delta.days + 1), 25)
     
     # Generate 7 commits for each selected day
     for day in selected_days:
         current_date = start_date + timedelta(days=day)
         date_str = current_date.strftime('%Y-%m-%d')
         
-        for i in range(7):  # 3 commits per day
+        for i in range(3):  # 3 commits per day
             # Random time between 9:00 and 17:00
             hour = random.randint(9, 16)
             minute = random.randint(0, 59)
