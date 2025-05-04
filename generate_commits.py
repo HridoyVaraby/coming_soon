@@ -4,8 +4,8 @@ from datetime import datetime, timedelta
 
 def generate_commits():
     # Set date range
-    start_date = datetime(2023, 1, 1)
-    end_date = datetime(2023, 12, 31)
+    start_date = datetime(2022, 1, 1)
+    end_date = datetime(2022, 12, 31)
     delta = end_date - start_date
     
     # Create markdown file if not exists
@@ -14,7 +14,7 @@ def generate_commits():
             f.write('# Commit History\n\n')
     
     # Select 15 random days
-    selected_days = random.sample(range(delta.days + 1), 15)
+    selected_days = random.sample(range(delta.days + 1), 43)
     
     # Generate 7 commits for each selected day
     for day in selected_days:
