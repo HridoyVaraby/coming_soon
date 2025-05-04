@@ -21,7 +21,7 @@ def generate_commits():
         current_date = start_date + timedelta(days=day)
         date_str = current_date.strftime('%Y-%m-%d')
         
-        for i in range(3):  # 3 commits per day
+        for i in range(4):  # 3 commits per day
             # Random time between 9:00 and 17:00
             hour = random.randint(9, 16)
             minute = random.randint(0, 59)
